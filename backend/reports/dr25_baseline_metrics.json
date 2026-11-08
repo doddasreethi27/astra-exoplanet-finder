@@ -1,0 +1,68 @@
+{
+  "available": true,
+  "model": "DR25 Random Forest",
+  "dataset": "Kepler Q1-Q17 DR25 KOI",
+  "feature_names": [
+    "koi_period",
+    "koi_depth",
+    "koi_duration",
+    "koi_model_snr"
+  ],
+  "total_records": 7995,
+  "train_records": 5972,
+  "test_records": 2023,
+  "train_unique_stars": 5152,
+  "test_unique_stars": 1718,
+  "accuracy": 0.8141374196737519,
+  "macro_precision": 0.8168368601142686,
+  "macro_recall": 0.8126806043851771,
+  "macro_f1": 0.8131236598131649,
+  "labels": [
+    "FALSE POSITIVE",
+    "PLANET-LIKE"
+  ],
+  "confusion_matrix": [
+    [
+      749,
+      233
+    ],
+    [
+      143,
+      898
+    ]
+  ],
+  "classification_report": {
+    "FALSE POSITIVE": {
+      "precision": 0.8396860986547086,
+      "recall": 0.7627291242362525,
+      "f1-score": 0.7993596584845251,
+      "support": 982.0
+    },
+    "PLANET-LIKE": {
+      "precision": 0.7939876215738285,
+      "recall": 0.8626320845341018,
+      "f1-score": 0.8268876611418048,
+      "support": 1041.0
+    },
+    "accuracy": 0.8141374196737519,
+    "macro avg": {
+      "precision": 0.8168368601142686,
+      "recall": 0.8126806043851771,
+      "f1-score": 0.8131236598131649,
+      "support": 2023.0
+    },
+    "weighted avg": {
+      "precision": 0.8161704710515468,
+      "recall": 0.8141374196737519,
+      "f1-score": 0.8135250815029275,
+      "support": 2023.0
+    }
+  },
+  "feature_importance": {
+    "koi_period": 0.3723452603169816,
+    "koi_depth": 0.30156675098517505,
+    "koi_duration": 0.16490627928733423,
+    "koi_model_snr": 0.16118170941050905
+  },
+  "note": "Catalogue-based baseline using DR25 KOI features. Split grouped by target star. This is not raw light-curve detection or independent planet confirmation."
+}
