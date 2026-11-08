@@ -1,0 +1,13 @@
+.venv/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+backend/models/*.joblib
+backend/models/*.keras
+backend/data/raw/*
+!backend/data/raw/.gitkeep
+!backend/data/raw/labels_template.csv
+backend/data/processed/*
+!backend/data/processed/.gitkeep
